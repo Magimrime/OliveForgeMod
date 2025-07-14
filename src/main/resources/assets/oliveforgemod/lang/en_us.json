@@ -4,6 +4,9 @@
 
   "item.oliveforgemod.chisel": "Chisel",
 
+  "item.oliveforgemod.kohlrabi": "Kohlrabi",
+  "item.oliveforgemod.aurora_ashes": "Aurora Ashes",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -12,5 +15,12 @@
   "block.oliveforgemod.magic_block": "Block of Hot Coal",
 
   "creativetab.oliveforgemod.alexandrite_items": "Alexandrite Items",
-  "creativetab.oliveforgemod.alexandrite_blocks": "Alexandrite Blocks"
+  "creativetab.oliveforgemod.alexandrite_blocks": "Alexandrite Blocks",
+
+  "tooltip.oliveforgemod.magic_block.tooltip": "This Block can smelt certain §9instantly§r!",
+
+  "tooltip.oliveforgemod.chisel.shift_down": "This Item changes certain Blocks.",
+  "tooltip.oliveforgemod.chisel": "Press §eShift§r for more Information!",
+
+  "tooltip.oliveforgemod.kohlrabi": "This §ecan§r turn you invisible!"
 }
