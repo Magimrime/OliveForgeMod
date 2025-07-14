@@ -2,6 +2,15 @@
   "item.oliveforgemod.alexandrite": "Alexandrite Gem",
   "item.oliveforgemod.raw_alexandrite": "Raw Alexandrite",
 
+  "item.oliveforgemod.chisel": "Chisel",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
-  "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite"
+  "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
+  "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
+  "block.oliveforgemod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+
+  "block.oliveforgemod.magic_block": "Hot Coals Block",
+
+  "creativetab.oliveforgemod.alexandrite_items": "Alexandrite Items",
+  "creativetab.oliveforgemod.alexandrite_blocks": "Alexandrite Blocks"
 }

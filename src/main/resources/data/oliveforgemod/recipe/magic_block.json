@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:block_of_coal"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "pattern": [
+    "MCM",
+    "CCC",
+    "MCM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oliveforgemod:magic_block"
+  }
+}
