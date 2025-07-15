@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_alexandrite_block": {
+    "has_coal_block": {
       "conditions": {
         "items": [
           {
-            "items": "oliveforgemod:alexandrite_block"
+            "items": "minecraft:coal_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_alexandrite_block"
+      "has_coal_block"
     ]
   ],
   "rewards": {

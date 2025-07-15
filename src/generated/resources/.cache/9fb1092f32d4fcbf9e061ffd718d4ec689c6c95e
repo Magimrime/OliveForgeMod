@@ -1,4 +1,4 @@
-// 1.21	2025-07-14T20:16:01.550833	Recipes
+// 1.21	2025-07-14T20:21:39.1347681	Recipes
 38d488a50edf6229dbde01543725cbcc84b74a9f data/oliveforgemod/advancement/recipes/misc/alexandrite.json
 5a01bd80f6f7167a6089a38e71ce684597a9bab2 data/oliveforgemod/advancement/recipes/misc/alexandrite_block.json
 98e759ba00839a38ccb6d316d0fb7a7f5e79c93e data/oliveforgemod/advancement/recipes/misc/alexandrite_from_blasting_alexandrite_deepslate_ore.json
@@ -8,7 +8,7 @@ cf8bde8c72d61741e4d0dc2210f5095390f5851d data/oliveforgemod/advancement/recipes/
 5c2f0db66855e496a5257fd2a12326d0af6491ab data/oliveforgemod/advancement/recipes/misc/alexandrite_from_smelting_alexandrite_ore.json
 ce4f3ac7bba768f6e766cb0ee24acb0ad9069307 data/oliveforgemod/advancement/recipes/misc/alexandrite_from_smelting_raw_alexandrite.json
 9d75c48071a5685cd0e1a15c9f3c60905956492d data/oliveforgemod/advancement/recipes/misc/chisel.json
-dedd4c24b1db71c3e0164138d3d42e5ecc053531 data/oliveforgemod/advancement/recipes/misc/magic_block.json
+bf792c7fc8ca7ee81bde6889eb2f7cad4599e07f data/oliveforgemod/advancement/recipes/misc/magic_block.json
 96b4180cbb9ccff1ac7ebc8663939b51a8ef87b4 data/oliveforgemod/recipe/alexandrite.json
 c157f3628d24d6d65eee9b3b571aed3aed45892c data/oliveforgemod/recipe/alexandrite_block.json
 edcc07fe7b33d912ae4c930ec189fa69bb260857 data/oliveforgemod/recipe/alexandrite_from_blasting_alexandrite_deepslate_ore.json
