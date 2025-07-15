@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "oliveforgemod:block/alexandrite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "oliveforgemod:block/alexandrite_lamp_on"
+    }
+  }
+}

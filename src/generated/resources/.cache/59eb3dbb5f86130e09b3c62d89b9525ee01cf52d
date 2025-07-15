@@ -1,10 +1,11 @@
-// 1.21	2025-07-15T07:50:40.2368795	Loot Tables
+// 1.21	2025-07-15T08:53:01.2306179	Loot Tables
 900c5e4a3d519de469cd516fb62c8600f207473d data/oliveforgemod/loot_table/blocks/alexandrite_block.json
 d212d613d3400316ae86411edf6f2074eb51603e data/oliveforgemod/loot_table/blocks/alexandrite_button.json
 bd4af47efe22f578232ea73fbcce52cb71242389 data/oliveforgemod/loot_table/blocks/alexandrite_deepslate_ore.json
 be6ac24d81e35e0d6ccfa8a3797ec0214c51b8d7 data/oliveforgemod/loot_table/blocks/alexandrite_door.json
 45ad8d122aa44a23653d519f8b3704f30c6f8e79 data/oliveforgemod/loot_table/blocks/alexandrite_fence.json
 e8884e1794742e96e5c78379de925417a08623bf data/oliveforgemod/loot_table/blocks/alexandrite_fence_gate.json
+e156c8d8c78d475d03d9131e4be3d55bfdd3e53c data/oliveforgemod/loot_table/blocks/alexandrite_lamp.json
 afd39f29342ceccf512f74e3fa072e7b97f669ac data/oliveforgemod/loot_table/blocks/alexandrite_ore.json
 c141d22ccb06d88deecd22eeeaf640b1ecc6ff3c data/oliveforgemod/loot_table/blocks/alexandrite_pressure_plate.json
 7513c25e71f3a91c5ac04909d7d751213b0abba0 data/oliveforgemod/loot_table/blocks/alexandrite_slab.json

@@ -17,6 +17,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.oliver.forgemod.block.ModBlocks;
+import net.oliver.forgemod.component.ModDataComponentTypes;
 
 import java.util.List;
 import java.util.Map;
@@ -54,6 +55,8 @@ public class ChiselItem extends Item {
                         item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null,pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
             }
         }
 
@@ -67,6 +70,11 @@ public class ChiselItem extends Item {
         } else {
             pTooltipComponents.add(Component.translatable("tooltip.oliveforgemod.chisel"));
         }
+
+        if(pStack.get(ModDataComponentTypes.COORDINATES.get()) != null) {
+            pTooltipComponents.add(Component.literal("Last block was changed at " + pStack.get(ModDataComponentTypes.COORDINATES.get())));
+        }
+
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }

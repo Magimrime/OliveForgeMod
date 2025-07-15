@@ -7,6 +7,12 @@
   "item.oliveforgemod.kohlrabi": "Kohlrabi",
   "item.oliveforgemod.aurora_ashes": "Aurora Ashes",
 
+  "item.oliveforgemod.alexandrite_sword": "Alexandrite Sword",
+  "item.oliveforgemod.alexandrite_pickaxe": "Alexandrite Pickaxe",
+  "item.oliveforgemod.alexandrite_shovel": "Alexandrite Shovel",
+  "item.oliveforgemod.alexandrite_axe": "Alexandrite Axe",
+  "item.oliveforgemod.alexandrite_hoe": "Alexandrite Hoe",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -24,6 +30,8 @@
 
   "block.oliveforgemod.alexandrite_door": "Alexandrite Door",
   "block.oliveforgemod.alexandrite_trapdoor": "Alexandrite Trapdoor",
+
+  "block.oliveforgemod.alexandrite_lamp": "Alexandrite Bulb",
 
   "block.oliveforgemod.magic_block": "Block of Hot Coal",
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "oliveforgemod:alexandrite"
+    },
+    "C": {
+      "item": "minecraft:copper_bulb"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oliveforgemod:alexandrite_lamp"
+  }
+}

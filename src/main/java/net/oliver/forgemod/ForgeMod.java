@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oliver.forgemod.block.ModBlocks;
+import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import org.slf4j.Logger;
@@ -38,6 +39,8 @@ public class ForgeMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModDataComponentTypes.DATA_COMPONENT_TYPES.register(modEventBus);
+
         // Rgister the item to a creative tab
         modEventBus.addListener(this::addCreative);
         //Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -57,6 +60,7 @@ public class ForgeMod {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
             event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+            event.accept(ModBlocks.ALEXANDRITE_LAMP);
         }
     }
 
