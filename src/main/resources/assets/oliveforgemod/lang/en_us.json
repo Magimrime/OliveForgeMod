@@ -17,7 +17,7 @@
   "creativetab.oliveforgemod.alexandrite_items": "Alexandrite Items",
   "creativetab.oliveforgemod.alexandrite_blocks": "Alexandrite Blocks",
 
-  "tooltip.oliveforgemod.magic_block.tooltip": "This Block can smelt certain §9instantly§r!",
+  "tooltip.oliveforgemod.magic_block.tooltip": "This Block can smelt certain items and blocks §9instantly§r!",
 
   "tooltip.oliveforgemod.chisel.shift_down": "This Item changes certain Blocks.",
   "tooltip.oliveforgemod.chisel": "Press §eShift§r for more Information!",
