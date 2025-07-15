@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "oliveforgemod:item/alexandrite_hammer"
+  }
+}

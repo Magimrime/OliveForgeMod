@@ -9,6 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.item.custom.ChiselItem;
 import net.oliver.forgemod.item.custom.FuelItem;
+import net.oliver.forgemod.item.custom.HammerItem;
 
 import java.util.List;
 
@@ -51,6 +52,10 @@ public class ModItems {
     public static final RegistryObject<Item> ALEXANDRITE_HOE = ITEMS.register("alexandrite_hoe",
             () -> new HoeItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.ALEXANDRITE,0,-3.0f))));
+
+    public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ALEXANDRITE,7,-3.5f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
