@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "oliveforgemod:block/alexandrite_block"
+  }
+}

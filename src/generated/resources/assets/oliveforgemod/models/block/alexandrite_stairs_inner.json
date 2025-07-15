@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "oliveforgemod:block/alexandrite_block",
+    "side": "oliveforgemod:block/alexandrite_block",
+    "top": "oliveforgemod:block/alexandrite_block"
+  }
+}

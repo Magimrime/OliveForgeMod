@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oliveforgemod:block/alexandrite_slab"
+    },
+    "type=double": {
+      "model": "oliveforgemod:block/alexandrite_block"
+    },
+    "type=top": {
+      "model": "oliveforgemod:block/alexandrite_slab_top"
+    }
+  }
+}

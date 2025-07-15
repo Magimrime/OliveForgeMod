@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "alexandrite",
+  "ingredients": [
+    {
+      "item": "oliveforgemod:alexandrite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "oliveforgemod:alexandrite_button"
+  }
+}
