@@ -49,7 +49,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK.get(),1)
                 .requires(Blocks.MAGMA_BLOCK, 4)
                 .requires(Blocks.COAL_BLOCK, 5)
-                .unlockedBy(getHasName(ModBlocks.ALEXANDRITE_BLOCK.get()), has(ModBlocks.ALEXANDRITE_BLOCK.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(Blocks.COAL_BLOCK), has(Blocks.COAL_BLOCK)).save(pRecipeOutput);
 
         oreSmelting(pRecipeOutput, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems. ALEXANDRITE.get(), 0.25f, 200, "alexandrite");
         oreBlasting(pRecipeOutput, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems. ALEXANDRITE.get(), 0.25f, 100, "alexandrite");
