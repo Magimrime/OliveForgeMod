@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oliveforgemod:block/alexandrite_deepslate_ore"
+  }
+}

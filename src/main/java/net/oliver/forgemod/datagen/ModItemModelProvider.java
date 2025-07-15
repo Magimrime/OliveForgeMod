@@ -21,3 +21,5 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.AURORA_ASHES.get());
     }
 }
+
+
