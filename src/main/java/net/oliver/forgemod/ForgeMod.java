@@ -18,6 +18,7 @@ import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
+import net.oliver.forgemod.sound.ModSounds;
 import net.oliver.forgemod.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -41,6 +42,7 @@ public class ForgeMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.DATA_COMPONENT_TYPES.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Rgister the item to a creative tab
         modEventBus.addListener(this::addCreative);

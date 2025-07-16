@@ -1,4 +1,4 @@
-// 1.21	2025-07-15T19:12:07.3837074	Item Models: oliveforgemod
+// 1.21	2025-07-16T08:17:30.7399864	Item Models: oliveforgemod
 e652f41bb0db0cf7615f075af2c046bf6631609b assets/oliveforgemod/models/item/alexandrite.json
 06ca9e73e41cfbebbd97b1d64049712e7eff6ce4 assets/oliveforgemod/models/item/alexandrite_axe.json
 814e570f740972954931622deb61578cd8b8b27a assets/oliveforgemod/models/item/alexandrite_boots.json
@@ -56,6 +56,8 @@ fa6659d8c9536fe8ed463b472da241aba07963c0 assets/oliveforgemod/models/item/alexan
 8779f0e58fc790da939e1f466159c29361f8035b assets/oliveforgemod/models/item/alexandrite_sword.json
 6941dd32824b2351dedc1f2dbf613275c85867ec assets/oliveforgemod/models/item/alexandrite_wall.json
 fbf2e1502f83d7f892ccf2a89cc3ddce058abe4c assets/oliveforgemod/models/item/aurora_ashes.json
+9b7b3a396204471bc27609c3a470f396d2e8f12f assets/oliveforgemod/models/item/bar_brawl_music_disc.json
 490acf5c942c7bf790d3f338628d67243ee4390c assets/oliveforgemod/models/item/kaupen_armor_trim_smithing_template.json
 ac5fe8c219bb6a4a32bf2c990079e6027d3d0ef6 assets/oliveforgemod/models/item/kohlrabi.json
 9610a36b0b158b37d8ae103e65d78e9eae96e266 assets/oliveforgemod/models/item/raw_alexandrite.json
+9bb96bab954c9056874918ffbef3d48f16d2f7bf assets/oliveforgemod/models/item/roll_music_disc.json

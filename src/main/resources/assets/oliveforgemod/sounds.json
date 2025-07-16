@@ -1,0 +1,56 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.oliveforgemod.chisel_use",
+    "sounds": [
+      "oliveforgemod:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.oliveforgemod.alexandrite_block_break",
+    "sounds": [
+      "oliveforgemod:alexandrite_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.oliveforgemod.alexandrite_block_step",
+    "sounds": [
+      "oliveforgemod:alexandrite_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.oliveforgemod.alexandrite_block_place",
+    "sounds": [
+      "oliveforgemod:alexandrite_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.oliveforgemod.alexandrite_block_hit",
+    "sounds": [
+      "oliveforgemod:alexandrite_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.oliveforgemod.alexandrite_block_fall",
+    "sounds": [
+      "oliveforgemod:alexandrite_block_fall"
+    ]
+  },
+  "bar_brawl":{
+    "subtitle": "sounds.oliveforgemod.bar_brawl",
+    "sounds": [
+      {
+        "name": "oliveforgemod:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "roll":{
+    "subtitle": "sounds.oliveforgemod.roll",
+    "sounds": [
+      {
+        "name": "oliveforgemod:roll",
+        "stream": true
+      }
+    ]
+  }
+}

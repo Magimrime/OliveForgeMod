@@ -12,6 +12,7 @@ import net.oliver.forgemod.item.custom.ChiselItem;
 import net.oliver.forgemod.item.custom.FuelItem;
 import net.oliver.forgemod.item.custom.HammerItem;
 import net.oliver.forgemod.item.custom.ModArmorItem;
+import net.oliver.forgemod.sound.ModSounds;
 
 import java.util.List;
 
@@ -81,6 +82,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> ALEXANDRITE_BOW = ITEMS.register("alexandrite_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+    public static final RegistryObject<Item> ROLL_MUSIC_DISC = ITEMS.register("roll_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ROLL_KEY).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

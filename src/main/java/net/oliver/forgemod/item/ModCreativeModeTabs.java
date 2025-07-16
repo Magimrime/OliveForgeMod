@@ -45,6 +45,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 
+                        output.accept(ModItems.ALEXANDRITE_BOW.get());
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+                        output.accept(ModItems.ROLL_MUSIC_DISC.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("alexandrite_blocks_tab",
@@ -72,8 +76,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
-
-                        output.accept(ModItems.ALEXANDRITE_BOW.get());
 
                     }).build());
 

@@ -25,6 +25,12 @@
 
   "item.oliveforgemod.alexandrite_bow": "Alexandrite Bow",
 
+  "item.oliveforgemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.oliveforgemod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+
+  "item.oliveforgemod.roll_music_disc.desc": "Rich Astley - Roll",
+  "item.oliveforgemod.roll_music_disc": "Roll Music Disc",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -58,5 +64,7 @@
   "tooltip.oliveforgemod.kohlrabi": "This §ecan§r turn you invisible!",
 
   "trim_pattern.oliveforgemod.kaupen": "Swirl Armor Trim",
-  "trim_material.oliveforgemod.alexandrite": "Alexandrite Material"
+  "trim_material.oliveforgemod.alexandrite": "Alexandrite Material",
+
+  "sounds.oliveforgemod.chisel_use": "Chisel Use",
 }

@@ -5,8 +5,10 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.JukeboxSong;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.oliver.forgemod.ForgeMod;
+import net.oliver.forgemod.sound.ModSounds;
 import net.oliver.forgemod.trim.ModTrimMaterials;
 import net.oliver.forgemod.trim.ModTrimPatterns;
 
@@ -22,3 +24,4 @@ public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
         super(output, registries, BUILDER, Set.of(ForgeMod.MOD_ID));
     }
 }
+
