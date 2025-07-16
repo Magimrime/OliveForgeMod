@@ -18,6 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.effect.ModEffects;
+import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.potion.ModPotions;
@@ -49,6 +50,8 @@ public class ForgeMod {
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+
+        ModEnchantmentEffect.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
