@@ -18,6 +18,7 @@ import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
+import net.oliver.forgemod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -75,7 +76,7 @@ public class ForgeMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
