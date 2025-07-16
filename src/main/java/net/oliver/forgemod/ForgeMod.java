@@ -2,6 +2,7 @@ package net.oliver.forgemod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,8 +17,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.component.ModDataComponentTypes;
+import net.oliver.forgemod.effect.ModEffects;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
+import net.oliver.forgemod.potion.ModPotions;
 import net.oliver.forgemod.sound.ModSounds;
 import net.oliver.forgemod.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -44,7 +47,10 @@ public class ForgeMod {
         ModDataComponentTypes.DATA_COMPONENT_TYPES.register(modEventBus);
         ModSounds.register(modEventBus);
 
-        // Rgister the item to a creative tab
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
+        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         //Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
