@@ -1,4 +1,4 @@
-// 1.21	2025-07-15T16:31:07.5802404	Recipes
+// 1.21	2025-07-15T19:20:34.7429497	Recipes
 555080ba95455c4b7af6eac97156d1954a26738c data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_slab.json
 3d56a15e4589ea7906bd413c8807a3949e15a27d data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_stairs.json
 2a928acac69e8ed3a0ebb74c08c6ddae87352f7c data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_wall.json
@@ -6,6 +6,7 @@ f44542c2a0f1980b7a00597647b5d58dd1d8a2ee data/oliveforgemod/advancement/recipes/
 38d488a50edf6229dbde01543725cbcc84b74a9f data/oliveforgemod/advancement/recipes/misc/alexandrite.json
 c69a27f3c0655941240ac132c60fcf88c8593ddd data/oliveforgemod/advancement/recipes/misc/alexandrite_axe.json
 5a01bd80f6f7167a6089a38e71ce684597a9bab2 data/oliveforgemod/advancement/recipes/misc/alexandrite_block.json
+b206bbdc5b4a019617e149d8f43672b4bfd98530 data/oliveforgemod/advancement/recipes/misc/alexandrite_bow.json
 98e759ba00839a38ccb6d316d0fb7a7f5e79c93e data/oliveforgemod/advancement/recipes/misc/alexandrite_from_blasting_alexandrite_deepslate_ore.json
 61aab779fd4031c1ef41e261df65417925985b28 data/oliveforgemod/advancement/recipes/misc/alexandrite_from_blasting_alexandrite_ore.json
 5c12cca0329ebab57eb5862c7cedbdcb8bcbf896 data/oliveforgemod/advancement/recipes/misc/alexandrite_from_blasting_raw_alexandrite.json
@@ -28,6 +29,7 @@ a7e939f3cafedf69be13db25ef22a0eaa1174fd0 data/oliveforgemod/advancement/recipes/
 96b4180cbb9ccff1ac7ebc8663939b51a8ef87b4 data/oliveforgemod/recipe/alexandrite.json
 544af9fc0da9693c5c6fbc81302f3c6a7c6f4fb9 data/oliveforgemod/recipe/alexandrite_axe.json
 c157f3628d24d6d65eee9b3b571aed3aed45892c data/oliveforgemod/recipe/alexandrite_block.json
+9a0f596e070c124ef04bd094bdf301f44c617193 data/oliveforgemod/recipe/alexandrite_bow.json
 5dcf35e60f948e1587fb7f0b786420f2c49a2bc9 data/oliveforgemod/recipe/alexandrite_button.json
 de639cc54858ba0c034101a8af9b0e69808ca1ab data/oliveforgemod/recipe/alexandrite_door.json
 d316535ffb666b168fe0387945c40846ea7287eb data/oliveforgemod/recipe/alexandrite_fence.json

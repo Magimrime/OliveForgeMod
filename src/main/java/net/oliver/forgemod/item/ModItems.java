@@ -79,6 +79,9 @@ public class ModItems {
     public static final RegistryObject<Item> KAUPEN_SMITHING_TEMPLATE = ITEMS.register("kaupen_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "kaupen")));
 
+    public static final RegistryObject<Item> ALEXANDRITE_BOW = ITEMS.register("alexandrite_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

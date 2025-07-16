@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "oliveforgemod:alexandrite"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " AS",
+    "# S",
+    " AS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oliveforgemod:alexandrite_bow"
+  }
+}

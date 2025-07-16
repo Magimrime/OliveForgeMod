@@ -73,6 +73,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
 
+                        output.accept(ModItems.ALEXANDRITE_BOW.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
