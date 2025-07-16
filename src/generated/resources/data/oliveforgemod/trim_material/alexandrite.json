@@ -1,0 +1,9 @@
+{
+  "asset_name": "alexandrite",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.oliveforgemod.alexandrite"
+  },
+  "ingredient": "oliveforgemod:alexandrite",
+  "item_model_index": 1.1
+}

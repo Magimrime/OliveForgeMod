@@ -15,6 +15,14 @@
 
   "item.oliveforgemod.alexandrite_hammer": "Alexandrite Hammer",
 
+  "item.oliveforgemod.alexandrite_helmet": "Alexandrite Helmet",
+  "item.oliveforgemod.alexandrite_chestplate": "Alexandrite Chestplate",
+  "item.oliveforgemod.alexandrite_leggings": "Alexandrite Leggings",
+  "item.oliveforgemod.alexandrite_boots": "Alexandrite Boots",
+
+  "item.oliveforgemod.alexandrite_horse_armor": "Alexandrite Horse Armor",
+  "item.oliveforgemod.kaupen_armor_trim_smithing_template": "Swirl Trim Template",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -45,5 +53,8 @@
   "tooltip.oliveforgemod.chisel.shift_down": "This Item changes certain Blocks.",
   "tooltip.oliveforgemod.chisel": "Press §eShift§r for more Information!",
 
-  "tooltip.oliveforgemod.kohlrabi": "This §ecan§r turn you invisible!"
+  "tooltip.oliveforgemod.kohlrabi": "This §ecan§r turn you invisible!",
+
+  "trim_pattern.oliveforgemod.kaupen": "Swirl Armor Trim",
+  "trim_material.oliveforgemod.alexandrite": "Alexandrite Material"
 }

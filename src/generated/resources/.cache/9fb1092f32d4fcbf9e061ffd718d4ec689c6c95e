@@ -1,4 +1,4 @@
-// 1.21	2025-07-15T10:21:53.6034299	Recipes
+// 1.21	2025-07-15T16:31:07.5802404	Recipes
 555080ba95455c4b7af6eac97156d1954a26738c data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_slab.json
 3d56a15e4589ea7906bd413c8807a3949e15a27d data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_stairs.json
 2a928acac69e8ed3a0ebb74c08c6ddae87352f7c data/oliveforgemod/advancement/recipes/building_blocks/alexandrite_wall.json
@@ -18,6 +18,7 @@ d91ac1ce0cd896f0475681b8a0803c0dcd7a4549 data/oliveforgemod/advancement/recipes/
 3675193b59cb0ed9bd3a7e0e44cb2da30db31ed0 data/oliveforgemod/advancement/recipes/misc/alexandrite_shovel.json
 744026615352a7e854c8519d85fc455a9d758020 data/oliveforgemod/advancement/recipes/misc/alexandrite_sword.json
 9d75c48071a5685cd0e1a15c9f3c60905956492d data/oliveforgemod/advancement/recipes/misc/chisel.json
+8b41b6b0826283e12a6e9f79d186c223e066e959 data/oliveforgemod/advancement/recipes/misc/kaupen.json
 bf792c7fc8ca7ee81bde6889eb2f7cad4599e07f data/oliveforgemod/advancement/recipes/misc/magic_block.json
 7fe65aa5eea207ba968b7a3e3cb913128be499db data/oliveforgemod/advancement/recipes/redstone/alexandrite_button.json
 650deb4b68c0fc9211a80464e15d3fa371ef92b3 data/oliveforgemod/advancement/recipes/redstone/alexandrite_door.json
@@ -48,4 +49,5 @@ e30e7cca5c6241382e1f59e620ea1109c6575ef5 data/oliveforgemod/recipe/alexandrite_s
 ceadd5fc3d5a4279b880ce49b4e4f22adfd5f5e5 data/oliveforgemod/recipe/alexandrite_trapdoor.json
 1c3fff753a1cce728f25e7b03e4eae153823085b data/oliveforgemod/recipe/alexandrite_wall.json
 2f9f9e48eaf69cb13bab212ba6770dcce5824a09 data/oliveforgemod/recipe/chisel.json
+097335ec93c3286ec6f9ed39a8b1a5e692360194 data/oliveforgemod/recipe/kaupen.json
 c0f5e707aec35d547396c11a8f5d6403e0c98203 data/oliveforgemod/recipe/magic_block.json

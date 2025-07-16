@@ -3,6 +3,7 @@ package net.oliver.forgemod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -27,5 +28,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.RAW_GOLD)
                 .add(Items.RAW_IRON);
 
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ALEXANDRITE_HELMET.get())
+                .add(ModItems.ALEXANDRITE_CHESTPLATE.get())
+                .add(ModItems.ALEXANDRITE_LEGGINGS.get())
+                .add(ModItems.ALEXANDRITE_BOOTS.get());
+
+        tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.ALEXANDRITE.get());
+
+        tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
     }
 }

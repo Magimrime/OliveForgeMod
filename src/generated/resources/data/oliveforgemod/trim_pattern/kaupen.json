@@ -1,0 +1,8 @@
+{
+  "asset_id": "oliveforgemod:kaupen",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.oliveforgemod.kaupen"
+  },
+  "template_item": "oliveforgemod:kaupen_armor_trim_smithing_template"
+}
