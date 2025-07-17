@@ -1,5 +1,6 @@
 package net.oliver.forgemod.datagen;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -14,10 +15,13 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.block.ModBlocks;
+import net.oliver.forgemod.block.custom.KohlrabiCropBrock;
 import net.oliver.forgemod.item.ModItems;
 
 import java.util.Set;
@@ -53,6 +57,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.ALEXANDRITE_DOOR.get()));
 
         dropSelf(ModBlocks.ALEXANDRITE_LAMP.get());
+
+        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.KOHLRABI_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(KohlrabiCropBrock.AGE, KohlrabiCropBrock.MAX_AGE));
+
+        this.add(ModBlocks.KOHLRABI_CROP.get(), this.createCropDrops(ModBlocks.KOHLRABI_CROP.get(),
+                ModItems.KHOLRABI.get(), ModItems.KOHLRABI_SEEDS.get(), lootItemConditionBuilder));
+
     }
 
     protected LootTable.Builder createMultipeOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

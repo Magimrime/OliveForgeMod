@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
+import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.item.custom.ChiselItem;
 import net.oliver.forgemod.item.custom.FuelItem;
 import net.oliver.forgemod.item.custom.HammerItem;
@@ -87,6 +88,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
     public static final RegistryObject<Item> ROLL_MUSIC_DISC = ITEMS.register("roll_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ROLL_KEY).stacksTo(1)));
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

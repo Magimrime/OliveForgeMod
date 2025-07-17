@@ -1,4 +1,4 @@
-// 1.21	2025-07-15T08:53:01.2306179	Loot Tables
+// 1.21	2025-07-16T19:28:12.6996701	Loot Tables
 900c5e4a3d519de469cd516fb62c8600f207473d data/oliveforgemod/loot_table/blocks/alexandrite_block.json
 d212d613d3400316ae86411edf6f2074eb51603e data/oliveforgemod/loot_table/blocks/alexandrite_button.json
 bd4af47efe22f578232ea73fbcce52cb71242389 data/oliveforgemod/loot_table/blocks/alexandrite_deepslate_ore.json
@@ -12,5 +12,6 @@ c141d22ccb06d88deecd22eeeaf640b1ecc6ff3c data/oliveforgemod/loot_table/blocks/al
 39bbcb35aa3f33dbbd56a2c8182b541935244631 data/oliveforgemod/loot_table/blocks/alexandrite_stairs.json
 a988bde7f989692b1c7b1cbdfd713d1ae2587d96 data/oliveforgemod/loot_table/blocks/alexandrite_trapdoor.json
 416e401718a3373ab9d942185ffdc1308d985cb0 data/oliveforgemod/loot_table/blocks/alexandrite_wall.json
+0dfd62f8d7d536e43cf5c751ad50d92217d0281a data/oliveforgemod/loot_table/blocks/kohlrabi_crop.json
 da689674e42b7a9d0ba5afcca750af147d2aa287 data/oliveforgemod/loot_table/blocks/magic_block.json
 d030e2f6327a98fb05563d9811a790f0a7eb81a5 data/oliveforgemod/loot_table/blocks/raw_alexandrite_block.json

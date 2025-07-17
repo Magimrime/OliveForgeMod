@@ -74,6 +74,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
         basicItem(ModItems.ROLL_MUSIC_DISC.get());
+
+        basicItem(ModItems.KOHLRABI_SEEDS.get());
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

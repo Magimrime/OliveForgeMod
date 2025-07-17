@@ -35,6 +35,8 @@
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimy Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimy Lingering Potion",
 
+  "item.oliveforgemod.kohlrabi_seeds": "Kohlrabi Seeds",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -54,6 +56,8 @@
   "block.oliveforgemod.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.oliveforgemod.alexandrite_lamp": "Alexandrite Bulb",
+
+  "block.oliveforgemod.kohlrabi_crop": "Kohlrabi Crop",
 
   "effect.oliveforgemod.slimey": "Slimey",
 
