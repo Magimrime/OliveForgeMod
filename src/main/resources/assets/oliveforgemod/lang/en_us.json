@@ -31,11 +31,15 @@
   "item.oliveforgemod.roll_music_disc.desc": "Rich Astley - Roll",
   "item.oliveforgemod.roll_music_disc": "Roll Music Disc",
 
+  "item.oliveforgemod.take_music_disc.desc": "a-ha - Take on Me",
+  "item.oliveforgemod.take_music_disc": "Take Music Disc",
+
   "item.minecraft.potion.effect.slimey_potion": "Slimy Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimy Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimy Lingering Potion",
 
   "item.oliveforgemod.kohlrabi_seeds": "Kohlrabi Seeds",
+  "item.oliveforgemod.night_berries": "Night Berries",
 
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
@@ -58,6 +62,7 @@
   "block.oliveforgemod.alexandrite_lamp": "Alexandrite Bulb",
 
   "block.oliveforgemod.kohlrabi_crop": "Kohlrabi Crop",
+  "block.oliveforgemod.night_berry_bush": "Night Berry Bush",
 
   "effect.oliveforgemod.slimey": "Slimey",
 

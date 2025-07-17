@@ -16,6 +16,7 @@ import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.custom.AlexandriteLampBlock;
 import net.oliver.forgemod.block.custom.KohlrabiCropBrock;
 import net.oliver.forgemod.block.custom.MagicBlock;
+import net.oliver.forgemod.block.custom.NightBerryBushBlock;
 import net.oliver.forgemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -71,6 +72,8 @@ public class ModBlocks {
     public static final  RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
             () -> new KohlrabiCropBrock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> NIGHT_BERRY_BUSH = BLOCKS.register("night_berry_bush",
+            () -> new NightBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

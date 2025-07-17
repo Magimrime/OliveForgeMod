@@ -48,8 +48,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_BOW.get());
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
                         output.accept(ModItems.ROLL_MUSIC_DISC.get());
+                        output.accept(ModItems.TAKE_MUSIC_DISC.get());
 
                         output.accept(ModItems.KOHLRABI_SEEDS.get());
+                        output.accept(ModItems.NIGHT_BERRIES.get());
 
                     }).build());
 

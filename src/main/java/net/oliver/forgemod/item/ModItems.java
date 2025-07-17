@@ -88,9 +88,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
     public static final RegistryObject<Item> ROLL_MUSIC_DISC = ITEMS.register("roll_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ROLL_KEY).stacksTo(1)));
+    public static final RegistryObject<Item> TAKE_MUSIC_DISC = ITEMS.register("take_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TAKE_KEY).stacksTo(1)));
 
     public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
             () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> NIGHT_BERRIES = ITEMS.register("night_berries",
+            () -> new ItemNameBlockItem(ModBlocks.NIGHT_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.NIGHT_BERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

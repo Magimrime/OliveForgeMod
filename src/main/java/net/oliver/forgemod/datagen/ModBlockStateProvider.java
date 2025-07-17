@@ -4,6 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -15,6 +16,7 @@ import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.block.custom.AlexandriteLampBlock;
 import net.oliver.forgemod.block.custom.KohlrabiCropBrock;
+import net.oliver.forgemod.block.custom.NightBerryBushBlock;
 
 import java.util.function.Function;
 
@@ -55,6 +57,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ALEXANDRITE_TRAPDOOR, "_bottom");
 
         makeCrop(((CropBlock) ModBlocks.KOHLRABI_CROP.get()),"kohlrabi_crop_stage","kohlrabi_crop_stage");
+        makeBush(((NightBerryBushBlock) ModBlocks.NIGHT_BERRY_BUSH.get()), "night_berry_bush_stage", "night_berry_bush_stage");
+    }
+
+    public void makeBush(NightBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(NightBerryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "block/" + textureName + state.getValue(NightBerryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

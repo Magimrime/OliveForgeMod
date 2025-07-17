@@ -26,6 +26,10 @@ public class ModSounds {
     public static final ResourceKey<JukeboxSong> ROLL_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
             ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "roll"));
 
+    public static final RegistryObject<SoundEvent> TAKE = registerSoundEvent("take");
+    public static final ResourceKey<JukeboxSong> TAKE_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
+            ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "take"));
+
 
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {

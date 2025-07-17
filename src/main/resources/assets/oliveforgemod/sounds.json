@@ -52,5 +52,14 @@
         "stream": true
       }
     ]
+  },
+  "take":{
+    "subtitle": "sounds.oliveforgemod.take",
+    "sounds": [
+      {
+        "name": "oliveforgemod:take",
+        "stream": true
+      }
+    ]
   }
 }
