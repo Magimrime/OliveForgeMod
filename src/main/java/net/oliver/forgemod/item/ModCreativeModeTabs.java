@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL.get());
 
                         output.accept(ModItems.KHOLRABI.get());
+                        output.accept(ModItems.WALNUT.get());
 
                         output.accept(ModItems.AURORA_ASHES.get());
 

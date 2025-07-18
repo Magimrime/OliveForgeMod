@@ -39,6 +39,10 @@ public class ModItems {
             }
         });
 
+    public static final RegistryObject<Item> WALNUT = ITEMS.register("walnut",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.WALNUT)));
+
+
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(),20000));
 

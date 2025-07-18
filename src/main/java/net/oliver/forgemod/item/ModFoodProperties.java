@@ -11,4 +11,6 @@ public class ModFoodProperties {
 
     public static final FoodProperties NIGHT_BERRY = new FoodProperties.Builder().nutrition(2).saturationModifier(0.15f).fast()
             .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 500), 0.2f).build();
+
+    public static final FoodProperties WALNUT = new FoodProperties.Builder().nutrition(2).saturationModifier(0.125f).fast().build();
 }

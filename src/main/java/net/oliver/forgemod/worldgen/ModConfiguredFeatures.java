@@ -49,15 +49,11 @@ public class ModConfiguredFeatures {
 
         register(context, WALNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WALNUT_LOG.get()),
-                new ForkingTrunkPlacer(
-                        3, // baseHeight
-                        4,  //Additional random height added to baseHeight (0 to 4 blocks)
-                        3), //Maximum number of extra branches that can fork off (0 to 3 branches)
-
+                new ForkingTrunkPlacer(3, 4, 3), // Keep existing trunk: 3-7 blocks tall, 0-3 branches
                 BlockStateProvider.simple(ModBlocks.WALNUT_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)
+        ).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
