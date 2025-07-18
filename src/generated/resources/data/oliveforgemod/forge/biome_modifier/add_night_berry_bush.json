@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:taiga",
+    "minecraft:old_growth_spruce_taiga"
+  ],
+  "features": "oliveforgemod:night_berry_push_placed",
+  "step": "vegetal_decoration"
+}
