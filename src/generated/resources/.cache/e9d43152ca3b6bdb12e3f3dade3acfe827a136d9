@@ -1,4 +1,6 @@
-// 1.21	2025-07-15T16:31:07.5869193	Tags for minecraft:item mod id oliveforgemod
+// 1.21	2025-07-17T17:11:35.5621978	Tags for minecraft:item mod id oliveforgemod
+1c6943e54c6ecf3a8a79a033fcb70f75731ea342 data/minecraft/tags/item/logs_that_burn.json
+390f91c5f210f6eb426103d09ecdde2f16d986f1 data/minecraft/tags/item/planks.json
 5f5cc3e2342fa836414d1f49ccdf377c09e809e0 data/minecraft/tags/item/trimmable_armor.json
 345e9c32a701f9e6485c6ce18661e7f30cdadff1 data/minecraft/tags/item/trim_materials.json
 4f3737b8c04b96e7067ff938e965e340abf77537 data/minecraft/tags/item/trim_templates.json

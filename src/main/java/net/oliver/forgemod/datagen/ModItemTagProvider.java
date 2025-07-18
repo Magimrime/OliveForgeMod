@@ -8,6 +8,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.oliver.forgemod.ForgeMod;
+import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -39,5 +40,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.WALNUT_LOG.get().asItem())
+                .add(ModBlocks.WALNUT_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_WALNUT_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_WALNUT_WOOD.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.WALNUT_PLANKS.get().asItem());
     }
 }

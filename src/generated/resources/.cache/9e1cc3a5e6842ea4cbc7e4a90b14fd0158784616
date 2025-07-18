@@ -1,6 +1,7 @@
-// 1.21	2025-07-15T10:21:53.5996255	Tags for minecraft:block mod id oliveforgemod
+// 1.21	2025-07-17T17:11:35.5448406	Tags for minecraft:block mod id oliveforgemod
 a28e27a369f1a360de589ae661d5381f96669c5e data/minecraft/tags/block/fences.json
 d89610cfcc21fcd7ef8b824b679e4d0fcf1a6da2 data/minecraft/tags/block/fence_gates.json
+1c6943e54c6ecf3a8a79a033fcb70f75731ea342 data/minecraft/tags/block/logs_that_burn.json
 1b4e38ccaed2bab24ac6380f200dd5a0868b2cec data/minecraft/tags/block/mineable/pickaxe.json
 6e3755ed9689f42ae80a7cf61192ee08b002ccdc data/minecraft/tags/block/needs_diamond_tool.json
 7099d9138d7f199d7e8b8da0496bc4b26a5d10f4 data/minecraft/tags/block/needs_iron_tool.json

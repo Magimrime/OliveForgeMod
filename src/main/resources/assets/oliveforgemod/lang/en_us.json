@@ -48,6 +48,16 @@
   "block.oliveforgemod.alexandrite_end_ore": "Alexandrite End Ore",
   "block.oliveforgemod.alexandrite_nether_ore": "Alexandrite Nether Ore",
 
+
+  "block.oliveforgemod.walnut_log": "Walnut Log",
+  "block.oliveforgemod.walnut_planks": "Walnut Planks",
+  "block.oliveforgemod.walnut_wood": "Walnut Wood",
+  "block.oliveforgemod.stripped_walnut_log": "Stripped Walnut Log",
+  "block.oliveforgemod.stripped_walnut_wood": "Stripped Walnut Wood",
+  "block.oliveforgemod.walnut_leaves": "Walnut Leaves",
+
+  "block.oliveforgemod.walnut_sapling": "Walnut Sapling",
+
   "block.oliveforgemod.alexandrite_stairs": "Alexandrite Stairs",
   "block.oliveforgemod.alexandrite_slab": "Alexandrite Slab",
 

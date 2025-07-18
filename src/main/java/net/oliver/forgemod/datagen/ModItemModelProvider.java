@@ -78,6 +78,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.KOHLRABI_SEEDS.get());
         basicItem(ModItems.NIGHT_BERRIES.get());
+
+        saplingItem(ModBlocks.WALNUT_SAPLING);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -125,6 +127,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         }
     }
 
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID,"block/" + item.getId().getPath()));
+    }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),

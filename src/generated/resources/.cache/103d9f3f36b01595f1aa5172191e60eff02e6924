@@ -1,4 +1,4 @@
-// 1.21	2025-07-17T16:12:53.3138715	Registries
+// 1.21	2025-07-17T17:18:26.8878728	Registries
 a429acd17954a16dd788e118bd31911f2e520c75 data/oliveforgemod/enchantment/lightning_striker.json
 2e39a8a2d496993abf1b4c9734c03918106c41e3 data/oliveforgemod/forge/biome_modifier/add_alexandrite_ore.json
 4caa60e20c2b2af4cc352db63e6772f050af731c data/oliveforgemod/forge/biome_modifier/add_end_alexandrite_ore.json
@@ -8,6 +8,7 @@ a429acd17954a16dd788e118bd31911f2e520c75 data/oliveforgemod/enchantment/lightnin
 269cd4621c2c404da4bedad9b1c87f0b987dced4 data/oliveforgemod/worldgen/configured_feature/alexandrite_ore.json
 b2dd06b57077e8fdc478898462ce8f73e514ef6c data/oliveforgemod/worldgen/configured_feature/end_alexandrite_ore.json
 dfb00c1aec403e5e104886e20824d152b3cf70df data/oliveforgemod/worldgen/configured_feature/nether_alexandrite_ore.json
+7a83a253dd377ddc1ba24554f91963dcb3eb747f data/oliveforgemod/worldgen/configured_feature/walnut.json
 f662c8f3e7b9bfa3bf240af4216928ce00180aaf data/oliveforgemod/worldgen/placed_feature/alexandrite_ore_placed.json
 a081348b45960da4941ae96a0994e6974201490e data/oliveforgemod/worldgen/placed_feature/end_alexandrite_ore_placed.json
 ca2a86195d8980d5ecafd9a58d3d8c5b2f19c92f data/oliveforgemod/worldgen/placed_feature/nether_alexandrite_ore_placed.json
