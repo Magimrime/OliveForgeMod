@@ -40,7 +40,7 @@ public class SandSnailEntity extends Animal {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(1, new PanicGoal(this,2.0));
+        this.goalSelector.addGoal(1, new PanicGoal(this,0.0));
         this.goalSelector.addGoal(2, new BreedGoal(this, 1.0));
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.25, stack -> stack.is(ModItems.NIGHT_BERRIES.get()), false));
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.25));
@@ -51,7 +51,7 @@ public class SandSnailEntity extends Animal {
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 10)
-                .add(Attributes.MOVEMENT_SPEED, 0.05)
+                .add(Attributes.MOVEMENT_SPEED, 0.08)
                 .add(Attributes.FOLLOW_RANGE, 10);
     }
 
@@ -103,14 +103,6 @@ public class SandSnailEntity extends Animal {
 
         if (this.level().isClientSide()) {
             this.setupAnimationStates();
-        }
-
-        // Check for nearby players and set panic
-        if (!this.level().isClientSide()) {
-            Player nearestPlayer = this.level().getNearestPlayer(this, 8.0);
-            if (nearestPlayer != null && nearestPlayer.distanceToSqr(this) < 64.0) {
-                this.panicTicks = 60; // Panic for 3 seconds (60 ticks)
-            }
         }
 
         // Manage panic ticks

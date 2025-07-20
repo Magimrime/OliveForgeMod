@@ -70,16 +70,8 @@ public class SandSnailModel<T extends SandSnailEntity> extends HierarchicalModel
     @Override
     public void setupAnim(SandSnailEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.root().getAllParts().forEach(ModelPart::resetPose);
-
-        if (entity.isPanicked()) {
-            // Apply curl animation
-            this.animate(entity.curlAnimationState, SandSnailAnimations.CURL, ageInTicks, 0.0F);
-        } else {
-            // Normal animations
-            this.applyHeadRotation(netHeadYaw, headPitch);
-            this.animateWalk(SandSnailAnimations.CRAWLING, limbSwing, limbSwingAmount, 2f, 2.5f);
-            this.animate(entity.idleAnimationState, SandSnailAnimations.IDLE, ageInTicks, 0.12f);
-        }
+        this.applyHeadRotation(netHeadYaw, headPitch);
+        // GeckoLib handles animations via the entity’s AnimationController
     }
 
     private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch) {

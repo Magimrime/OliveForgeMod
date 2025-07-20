@@ -6,8 +6,7 @@ import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
 public class SandSnailAnimations {
-
-    public static final AnimationDefinition IDLE = AnimationDefinition.Builder.withLength(4f)
+    public static final AnimationDefinition IDLE  = AnimationDefinition.Builder.withLength(4f)
             .addAnimation("head",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
@@ -18,7 +17,6 @@ public class SandSnailAnimations {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(4f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
-
     public static final AnimationDefinition CRAWLING = AnimationDefinition.Builder.withLength(25f)
             .addAnimation("Antenni",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -34,7 +32,6 @@ public class SandSnailAnimations {
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(2.3433335f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
-
     public static final AnimationDefinition CURL = AnimationDefinition.Builder.withLength(1.0416767f)
             .addAnimation("head",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -65,13 +62,19 @@ public class SandSnailAnimations {
             .addAnimation("body",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(0.4167667f, KeyframeAnimations.posVec(0f, 1f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(0.8343334f, KeyframeAnimations.posVec(0f, -1f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("body",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR)))
-            .build();
-
+                                    AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(0.4167667f, KeyframeAnimations.degreeVec(-180f, 0f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(0.8343334f, KeyframeAnimations.degreeVec(-360f, 0f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition PEEK = AnimationDefinition.Builder.withLength(1.25f)
             .addAnimation("head",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -101,7 +104,6 @@ public class SandSnailAnimations {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1f, KeyframeAnimations.degreeVec(-12.5f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
-
     public static final AnimationDefinition UNCURL = AnimationDefinition.Builder.withLength(1.25f)
             .addAnimation("head",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
