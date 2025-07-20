@@ -1,6 +1,7 @@
 package net.oliver.forgemod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +20,8 @@ import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.effect.ModEffects;
 import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
+import net.oliver.forgemod.entity.ModEntities;
+import net.oliver.forgemod.entity.client.SandSnailRenderer;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.potion.ModPotions;
@@ -52,6 +55,7 @@ public class ForgeMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffect.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -92,6 +96,8 @@ public class ForgeMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.SANDSNAIL.get(), SandSnailRenderer::new);
         }
     }
 }

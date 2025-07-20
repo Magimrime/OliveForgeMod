@@ -42,6 +42,8 @@
   "item.oliveforgemod.kohlrabi_seeds": "Kohlrabi Seeds",
   "item.oliveforgemod.night_berries": "Night Berries",
 
+  "item.oliveforgemod.sandsnail_spawn_egg": "Sand Snail Spawn Egg",
+
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.oliveforgemod.alexandrite_ore": "Alexandrite Ore",
@@ -103,5 +105,7 @@
   "trim_pattern.oliveforgemod.kaupen": "Swirl Armor Trim",
   "trim_material.oliveforgemod.alexandrite": "Alexandrite Material",
 
-  "sounds.oliveforgemod.chisel_use": "Chisel Use"
+  "sounds.oliveforgemod.chisel_use": "Chisel Use",
+
+  "entity.oliveforgemod.sand_snail": "Sand Snail"
 }

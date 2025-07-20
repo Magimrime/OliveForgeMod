@@ -54,6 +54,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KOHLRABI_SEEDS.get());
                         output.accept(ModItems.NIGHT_BERRIES.get());
 
+                        output.accept(ModItems.SANDSNAIL_SPAWN_EGG.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("alexandrite_blocks_tab",

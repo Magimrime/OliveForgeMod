@@ -4,12 +4,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
+import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.item.custom.ChiselItem;
 import net.oliver.forgemod.item.custom.FuelItem;
 import net.oliver.forgemod.item.custom.HammerItem;
@@ -102,6 +104,8 @@ public class ModItems {
     public static final RegistryObject<Item> NIGHT_BERRIES = ITEMS.register("night_berries",
             () -> new ItemNameBlockItem(ModBlocks.NIGHT_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.NIGHT_BERRY)));
 
+    public static final RegistryObject<Item> SANDSNAIL_SPAWN_EGG = ITEMS.register("sandsnail_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SANDSNAIL, 0xf2e28c, 0xac9061, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
