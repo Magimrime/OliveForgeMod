@@ -104,8 +104,8 @@ public class ModItems {
     public static final RegistryObject<Item> NIGHT_BERRIES = ITEMS.register("night_berries",
             () -> new ItemNameBlockItem(ModBlocks.NIGHT_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.NIGHT_BERRY)));
 
-    public static final RegistryObject<Item> SANDSNAIL_SPAWN_EGG = ITEMS.register("sandsnail_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntities.SANDSNAIL, 0xf2e28c, 0xac9061, new Item.Properties()));
+    public static final RegistryObject<Item> SNAIL_SPAWN_EGG = ITEMS.register("snail_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SNAIL, 0xf2e28c, 0xac9061, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -10,13 +10,14 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.oliver.forgemod.ForgeMod;
-import net.oliver.forgemod.entity.custom.SandSnailEntity;
+import net.oliver.forgemod.entity.custom.SnailEntity;
 
-public class SandSnailModel<T extends SandSnailEntity> extends HierarchicalModel<T> {
+public class SnailModel<T extends SnailEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "sandsnail"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "snail"), "main");
     private final ModelPart FullBody;
     private final ModelPart Middle;
+
     private final ModelPart Tail;
     private final ModelPart FullHead;
     private final ModelPart Head;
@@ -25,7 +26,7 @@ public class SandSnailModel<T extends SandSnailEntity> extends HierarchicalModel
     private final ModelPart Antenna1;
     private final ModelPart Shell;
 
-    public SandSnailModel(ModelPart root) {
+    public SnailModel(ModelPart root) {
         this.FullBody = root.getChild("FullBody");
         this.Middle = this.FullBody.getChild("Middle");
         this.Tail = this.FullBody.getChild("Tail");
@@ -68,10 +69,15 @@ public class SandSnailModel<T extends SandSnailEntity> extends HierarchicalModel
     }
 
     @Override
-    public void setupAnim(SandSnailEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setupAnim(SnailEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.root().getAllParts().forEach(ModelPart::resetPose);
         this.applyHeadRotation(netHeadYaw, headPitch);
-        // GeckoLib handles animations via the entity’s AnimationController
+
+        this.animateWalk(SnailAnimations.CRAWLING, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.animate(entity.curlAnimationState, SnailAnimations.CURL, ageInTicks, 1f);
+        this.animate(entity.peekAnimationState, SnailAnimations.PEEK, ageInTicks, 1f);
+        this.animate(entity.uncurlAnimationState, SnailAnimations.UNCURL, ageInTicks, 1f);
+        this.animate(entity.idleAnimationState, SnailAnimations.IDLE, ageInTicks, 1f);
     }
 
     private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch) {

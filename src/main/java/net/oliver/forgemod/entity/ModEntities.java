@@ -7,15 +7,15 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
-import net.oliver.forgemod.entity.custom.SandSnailEntity;
+import net.oliver.forgemod.entity.custom.SnailEntity;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ForgeMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<SandSnailEntity>> SANDSNAIL =
-            ENTITY_TYPES.register("sand_snail", () -> EntityType.Builder.of(SandSnailEntity::new, MobCategory.CREATURE)
-                    .sized(0.45f, 0.45f).build("sand_snail"));
+    public static final RegistryObject<EntityType<SnailEntity>> SNAIL =
+            ENTITY_TYPES.register("snail", () -> EntityType.Builder.of(SnailEntity::new, MobCategory.CREATURE)
+                    .sized(0.45f, 0.45f).build("snail"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

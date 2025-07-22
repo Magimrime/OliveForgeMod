@@ -21,7 +21,7 @@ import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.effect.ModEffects;
 import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
 import net.oliver.forgemod.entity.ModEntities;
-import net.oliver.forgemod.entity.client.SandSnailRenderer;
+import net.oliver.forgemod.entity.client.SnailRenderer;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.potion.ModPotions;
@@ -97,7 +97,7 @@ public class ForgeMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
 
-            EntityRenderers.register(ModEntities.SANDSNAIL.get(), SandSnailRenderer::new);
+            EntityRenderers.register(ModEntities.SNAIL.get(), SnailRenderer::new);
         }
     }
 }

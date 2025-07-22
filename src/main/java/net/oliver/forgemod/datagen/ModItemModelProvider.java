@@ -82,7 +82,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.WALNUT_SAPLING);
 
-        withExistingParent(ModItems.SANDSNAIL_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SNAIL_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

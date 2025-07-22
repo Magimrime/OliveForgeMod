@@ -42,7 +42,7 @@
   "item.oliveforgemod.kohlrabi_seeds": "Kohlrabi Seeds",
   "item.oliveforgemod.night_berries": "Night Berries",
 
-  "item.oliveforgemod.sandsnail_spawn_egg": "Sand Snail Spawn Egg",
+  "item.oliveforgemod.snail_spawn_egg": "Snail Spawn Egg",
 
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",
@@ -107,5 +107,5 @@
 
   "sounds.oliveforgemod.chisel_use": "Chisel Use",
 
-  "entity.oliveforgemod.sand_snail": "Sand Snail"
+  "entity.oliveforgemod.snail": "Snail"
 }

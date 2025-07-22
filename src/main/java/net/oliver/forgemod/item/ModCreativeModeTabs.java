@@ -54,7 +54,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KOHLRABI_SEEDS.get());
                         output.accept(ModItems.NIGHT_BERRIES.get());
 
-                        output.accept(ModItems.SANDSNAIL_SPAWN_EGG.get());
+                        output.accept(ModItems.SNAIL_SPAWN_EGG.get());
 
                     }).build());
 
