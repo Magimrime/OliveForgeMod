@@ -7,11 +7,15 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.oliver.forgemod.ForgeMod;
+import net.oliver.forgemod.entity.ModEntities;
+
+import java.util.List;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ALEXANDRITE_ORE = registerKey("add_alexandrite_ore");
@@ -21,6 +25,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_WALNUT_TREE = registerKey("add_tree_walnut");
 
     public static final ResourceKey<BiomeModifier> ADD_NIGHT_BERRY_BUSH = registerKey("add_night_berry_bush");
+
+    public static final ResourceKey<BiomeModifier> SPAWN_DIRT_SNAIL = registerKey("spawn_dirt_snail");
+    public static final ResourceKey<BiomeModifier> SPAWN_SAND_SNAIL = registerKey("spawn_sand_snail");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeature = context.lookup(Registries.PLACED_FEATURE);
@@ -57,6 +64,18 @@ public class ModBiomeModifiers {
                 HolderSet.direct(biomes.getOrThrow(Biomes.TAIGA), biomes.getOrThrow(Biomes.OLD_GROWTH_SPRUCE_TAIGA)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.NIGHT_BERRY_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        // Single snail spawner for all overworld biomes
+        context.register(SPAWN_DIRT_SNAIL, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 50, 4, 7))
+        ));
+
+        // Additional spawner specifically for sandy biomes with higher weight
+        context.register(SPAWN_SAND_SNAIL, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 200, 4, 7))
+        ));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

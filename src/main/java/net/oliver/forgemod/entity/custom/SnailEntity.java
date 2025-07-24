@@ -6,6 +6,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
@@ -16,7 +18,13 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.entity.SnailVariant;
 import net.oliver.forgemod.item.ModItems;
@@ -24,7 +32,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class SnailEntity extends Animal {
     private static final EntityDataAccessor<Integer> VARIANT =
@@ -46,7 +53,8 @@ public class SnailEntity extends Animal {
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(IS_PANICKED, false);builder.define(VARIANT, 0);
+        builder.define(IS_PANICKED, false);
+        builder.define(VARIANT, SnailVariant.DIRT.getId()); // Default to DIRT
     }
 
     @Override
@@ -92,7 +100,7 @@ public class SnailEntity extends Animal {
         } else {
             --this.idleAnimationTimeout;
         }
-        
+
         // Don't run idle animation when panicked
         if (this.isPanicked()) {
             this.idleAnimationState.stop();
@@ -205,15 +213,81 @@ public class SnailEntity extends Animal {
     @Override
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty,
                                         MobSpawnType pSpawnType, @Nullable SpawnGroupData pSpawnGroupData) {
-        SnailVariant variant = Util.getRandom(SnailVariant.values(), this.random);
+        ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
+        boolean isSandyBiome = biomeKey != null && (
+                biomeKey.equals(Biomes.BEACH) ||
+                        biomeKey.equals(Biomes.SNOWY_BEACH) ||
+                        biomeKey.equals(Biomes.DESERT) ||
+                        biomeKey.equals(Biomes.BADLANDS) ||
+                        biomeKey.equals(Biomes.ERODED_BADLANDS) ||
+                        biomeKey.equals(Biomes.WOODED_BADLANDS)
+        );
+        SnailVariant variant = isSandyBiome ? SnailVariant.SAND : SnailVariant.DIRT;
         this.setVariant(variant);
+        System.out.println("Snail spawned at " + this.blockPosition() + " in biome " + (biomeKey != null ? biomeKey.location() : "unknown") + " with variant " + variant);
         return super.finalizeSpawn(pLevel, pDifficulty, pSpawnType, pSpawnGroupData);
     }
 
     @Override
     public void finalizeSpawnChildFromBreeding(ServerLevel pLevel, Animal pAnimal, @Nullable AgeableMob pBaby) {
-        SnailVariant variant = Util.getRandom(SnailVariant.values(), this.random);
-        ((SnailEntity) pBaby).setVariant(variant);
+        if (pBaby instanceof SnailEntity snailBaby) {
+            // Set variant based on biome at spawn position
+            Biome biome = pLevel.getBiome(this.blockPosition()).value();
+            ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
+            boolean isSandyBiome = biomeKey != null && (
+                    biomeKey.equals(Biomes.BEACH) ||
+                            biomeKey.equals(Biomes.SNOWY_BEACH) ||
+                            biomeKey.equals(Biomes.DESERT) ||
+                            biomeKey.equals(Biomes.BADLANDS) ||
+                            biomeKey.equals(Biomes.ERODED_BADLANDS) ||
+                            biomeKey.equals(Biomes.WOODED_BADLANDS)
+            );
+            SnailVariant variant = isSandyBiome ? SnailVariant.SAND : SnailVariant.DIRT;
+            snailBaby.setVariant(variant);
+        }
         super.finalizeSpawnChildFromBreeding(pLevel, pAnimal, pBaby);
     }
+
+    @Override
+    public boolean checkSpawnRules(LevelAccessor pLevel, MobSpawnType pSpawnType) {
+        ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
+        BlockState blockBelow = pLevel.getBlockState(this.blockPosition().below());
+        
+        if (biomeKey != null && (biomeKey.equals(Biomes.BEACH) || biomeKey.equals(Biomes.SNOWY_BEACH) || biomeKey.equals(Biomes.DESERT) || biomeKey.equals(Biomes.BADLANDS) || biomeKey.equals(Biomes.ERODED_BADLANDS) || biomeKey.equals(Biomes.WOODED_BADLANDS))) {
+            // Sand Snails: Spawn on various blocks in sandy/mesa biomes with more permissive rules
+            return (blockBelow.is(Blocks.SAND) || 
+                    blockBelow.is(Blocks.SANDSTONE) || 
+                    blockBelow.is(Blocks.TERRACOTTA) ||
+                    blockBelow.is(Blocks.RED_SAND) ||
+                    blockBelow.is(Blocks.RED_SANDSTONE) ||
+                    blockBelow.is(Blocks.STONE) ||
+                    blockBelow.is(Blocks.DIRT) ||
+                    blockBelow.is(Blocks.COARSE_DIRT) ||
+                    blockBelow.is(Blocks.GRAVEL)); // Lower light requirement
+        } else {
+            // Dirt Snails: Spawn on grass in other biomes
+            return blockBelow.is(Blocks.GRASS_BLOCK) &&
+                    pLevel.getRawBrightness(this.blockPosition(), 0) > 8;
+        }
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return SoundEvents.ARMADILLO_AMBIENT;
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+        return SoundEvents.BAT_HURT;
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getDeathSound() {
+        return SoundEvents.ARMADILLO_DEATH;
+    }
+
+
 }
