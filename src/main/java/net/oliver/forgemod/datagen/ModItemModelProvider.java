@@ -48,7 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_ALEXANDRITE.get());
 
         // basicItem(ModItems.CHISEL.get());
-        basicItem(ModItems.KHOLRABI.get());
+        basicItem(ModItems.KOHLRABI.get());
         basicItem(ModItems.WALNUT.get());
         basicItem(ModItems.AURORA_ASHES.get());
 

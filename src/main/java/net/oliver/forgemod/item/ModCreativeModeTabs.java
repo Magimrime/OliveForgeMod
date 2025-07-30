@@ -25,7 +25,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CHISEL.get());
 
-                        output.accept(ModItems.KHOLRABI.get());
+                        output.accept(ModItems.KOHLRABI.get());
                         output.accept(ModItems.WALNUT.get());
 
                         output.accept(ModItems.AURORA_ASHES.get());
@@ -53,6 +53,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.KOHLRABI_SEEDS.get());
                         output.accept(ModItems.NIGHT_BERRIES.get());
+
+                        output.accept(ModItems.NECROMANCER_STAFF.get());
 
                         output.accept(ModItems.SNAIL_SPAWN_EGG.get());
 

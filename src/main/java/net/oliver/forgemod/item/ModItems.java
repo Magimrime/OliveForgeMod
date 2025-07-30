@@ -12,10 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.entity.ModEntities;
-import net.oliver.forgemod.item.custom.ChiselItem;
-import net.oliver.forgemod.item.custom.FuelItem;
-import net.oliver.forgemod.item.custom.HammerItem;
-import net.oliver.forgemod.item.custom.ModArmorItem;
+import net.oliver.forgemod.item.custom.*;
 import net.oliver.forgemod.sound.ModSounds;
 
 import java.util.List;
@@ -32,7 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
 
-    public static final RegistryObject<Item> KHOLRABI = ITEMS.register("kohlrabi",
+    public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
         () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)) {
             @Override
             public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
@@ -109,4 +106,8 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    public static final RegistryObject<Item> NECROMANCER_STAFF = ITEMS.register("necromancer_staff",
+            () -> new NecromancerStaffItem(Tiers.WOOD, new Item.Properties()
+                    .attributes(NecromancerStaffItem.createAttributes(Tiers.WOOD, 1, -2.4F))));
 }

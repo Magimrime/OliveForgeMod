@@ -78,7 +78,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(KohlrabiCropBrock.AGE, KohlrabiCropBrock.MAX_AGE));
 
         this.add(ModBlocks.KOHLRABI_CROP.get(), this.createCropDrops(ModBlocks.KOHLRABI_CROP.get(),
-                ModItems.KHOLRABI.get(), ModItems.KOHLRABI_SEEDS.get(), lootItemConditionBuilder));
+                ModItems.KOHLRABI.get(), ModItems.KOHLRABI_SEEDS.get(), lootItemConditionBuilder));
 
 
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);

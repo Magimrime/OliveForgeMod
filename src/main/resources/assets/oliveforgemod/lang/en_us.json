@@ -38,11 +38,13 @@
   "item.minecraft.potion.effect.slimey_potion": "Slimy Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimy Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimy Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Arrow of Slimy",
 
   "item.oliveforgemod.kohlrabi_seeds": "Kohlrabi Seeds",
   "item.oliveforgemod.night_berries": "Night Berries",
 
   "item.oliveforgemod.snail_spawn_egg": "Snail Spawn Egg",
+  "item.oliveforgemod.necromancer_staff": "Necromancer Staff",
 
   "block.oliveforgemod.alexandrite_block": "Block of Alexandrite",
   "block.oliveforgemod.raw_alexandrite_block": "Block of Raw Alexandrite",

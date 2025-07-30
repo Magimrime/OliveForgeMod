@@ -65,7 +65,7 @@ public class ForgeMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            ComposterBlock.COMPOSTABLES.put(ModItems.KHOLRABI.get(),0.4f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI.get(),0.4f);
             ComposterBlock.COMPOSTABLES.put(ModItems.WALNUT.get(),0.6f);
             ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI_SEEDS.get(),0.15f);
         });
