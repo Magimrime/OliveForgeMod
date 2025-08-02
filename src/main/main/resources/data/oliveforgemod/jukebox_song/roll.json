@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.oliveforgemod.roll_music_disc.desc"
+  },
+  "length_in_seconds": 207.0,
+  "sound_event": "oliveforgemod:roll"
+}

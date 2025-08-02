@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oliveforgemod:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "oliveforgemod:used": 1
+      },
+      "model": "oliveforgemod:item/chisel_used"
+    }
+  ]
+}
