@@ -5,6 +5,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -17,6 +18,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oliver.forgemod.block.ModBlocks;
+import net.oliver.forgemod.block.entity.ModBlockEntities;
+import net.oliver.forgemod.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.oliver.forgemod.component.ModDataComponentTypes;
 import net.oliver.forgemod.effect.ModEffects;
 import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
@@ -60,6 +63,8 @@ public class ForgeMod {
 
         ModLootModifiers.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         //Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -101,6 +106,11 @@ public class ForgeMod {
             ModItemProperties.addCustomItemProperties();
 
             EntityRenderers.register(ModEntities.SNAIL.get(), SnailRenderer::new);
+        }
+
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.PEDESTAL_BE.get(), PedestalBlockEntityRenderer::new);
         }
     }
 }

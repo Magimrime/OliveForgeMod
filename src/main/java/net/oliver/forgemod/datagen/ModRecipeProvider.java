@@ -36,6 +36,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.ALEXANDRITE.get())
                 .unlockedBy(getHasName(ModItems.ALEXANDRITE.get()), has(ModItems.ALEXANDRITE.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PEDESTAL.get())
+                .pattern("S#S")
+                .pattern(" I ")
+                .pattern("#S#")
+                .define('S', Items.STONE)
+                .define('#', Items.SMOOTH_STONE)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.STONE), has(Items.STONE)).save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHISEL.get())
                 .pattern(" A ")
                 .pattern(" S ")

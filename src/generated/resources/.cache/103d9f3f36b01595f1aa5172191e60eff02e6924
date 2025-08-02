@@ -1,10 +1,10 @@
-// 1.21	2025-07-23T19:15:21.8329805	Registries
+// 1.21	2025-08-02T15:11:45.3510299	Registries
 a429acd17954a16dd788e118bd31911f2e520c75 data/oliveforgemod/enchantment/lightning_striker.json
 2e39a8a2d496993abf1b4c9734c03918106c41e3 data/oliveforgemod/forge/biome_modifier/add_alexandrite_ore.json
 4caa60e20c2b2af4cc352db63e6772f050af731c data/oliveforgemod/forge/biome_modifier/add_end_alexandrite_ore.json
 64d2c99a31137e25b71f1bc0227f651703439104 data/oliveforgemod/forge/biome_modifier/add_nether_alexandrite_ore.json
 a6cff901d0609a06067bc13134f9496f321dbb98 data/oliveforgemod/forge/biome_modifier/add_night_berry_bush.json
-96dce7f70483b32d89eefa49e9267be28e15409b data/oliveforgemod/forge/biome_modifier/add_tree_walnut.json
+94d4a6fb5e0f9d4b4973547d6e149bf3b28400ef data/oliveforgemod/forge/biome_modifier/add_tree_walnut.json
 b910d319b5034b4cb5ab50ddb4abd52d22d40f5b data/oliveforgemod/forge/biome_modifier/spawn_dirt_snail.json
 de21ad8231f16be015ac944c682a8af566d076f7 data/oliveforgemod/forge/biome_modifier/spawn_sand_snail.json
 9c7b173541ace5f80c66db947d0262a5f3a2432f data/oliveforgemod/trim_material/alexandrite.json

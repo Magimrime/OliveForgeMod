@@ -2,9 +2,7 @@
   "type": "forge:add_features",
   "biomes": [
     "minecraft:plains",
-    "minecraft:windswept_savanna",
-    "minecraft:savanna",
-    "minecraft:windswept_hills"
+    "minecraft:savanna"
   ],
   "features": "oliveforgemod:walnut_placed",
   "step": "vegetal_decoration"

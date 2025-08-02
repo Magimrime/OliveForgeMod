@@ -24,7 +24,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get())
                 .add(ModBlocks.ALEXANDRITE_ORE.get())
                 .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.PEDESTAL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get());

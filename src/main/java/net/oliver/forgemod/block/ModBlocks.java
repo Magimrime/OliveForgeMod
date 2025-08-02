@@ -131,7 +131,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> WALNUT_SAPLING = registerBlock("walnut_sapling",
             () -> new SaplingBlock(ModTreeGrowers.WALNUT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
-
+public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
+    () -> new PedestalBlock(BlockBehaviour.Properties.of()
+        .strength(2.0f, 6.0f) // Hardness 2.0, Blast resistance 6.0
+        .sound(SoundType.STONE) // Stone sound for breaking/placing
+        .requiresCorrectToolForDrops() // Requires pickaxe
+        .noOcclusion())); // Retains noOcclusion if needed for your block's design
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
