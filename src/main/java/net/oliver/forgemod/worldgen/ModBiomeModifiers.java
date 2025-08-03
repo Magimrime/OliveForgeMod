@@ -56,7 +56,7 @@ public class ModBiomeModifiers {
 
 
         context.register(ADD_WALNUT_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SAVANNA)),
+                HolderSet.direct(biomes.getOrThrow(Biomes.THE_VOID)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.WALNUT_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
